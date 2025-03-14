@@ -1,0 +1,116 @@
+/* Refer the link below to learn more about the use cases of script.
+https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/148851bf8192412cba1f9d2c17f4bd25.html
+
+If you want to know more about the SCRIPT APIs, refer the link below
+https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf45b2e26/Cloud/en-US/index.html */
+import com.sap.gateway.ip.core.customdev.util.Message
+import javax.crypto.Mac
+import javax.crypto.spec.SecretKeySpec
+import java.text.SimpleDateFormat
+import java.util.TimeZone
+import java.util.Calendar
+
+def generateAzureSignature(String httpverb, String accountName, String apiver, String contentencoding, String contentlanguage, String contentlen,
+                           String contentmd5, String contenttype, String dateval, String ifmodifiedsince, String ifmatch, String ifnonmatch, String ifunmodifiedsince,
+                           String range, String sharedAccountKey, String cannonicalizedhttpheader, String urlresourcepath, String blobquery) {
+//Approach-1 
+def sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z")
+sdf.setTimeZone(TimeZone.getTimeZone("GMT"))
+def processingDate = sdf.format(new Date())
+//Approach-2
+// def processingDate ="Mon, 30 Dec 2024 11:32:00 GMT"
+//Approach-3
+// def sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z")
+// sdf.setTimeZone(TimeZone.getTimeZone("GMT"))
+// def processingDate = sdf.format(new Date())
+// def date = sdf.parse(processingDate)
+// def calendar = Calendar.getInstance()
+// calendar.setTime(date)
+// calendar.add(Calendar.HOUR_OF_DAY, 5)
+// calendar.add(Calendar.MINUTE, 30)
+// def newProcessingDate = sdf.format(calendar.getTime())
+def stringToSign = """${httpverb}
+${contentencoding}
+${contentlanguage}
+${contentlen}
+${contentmd5}
+${contenttype}
+${ifmodifiedsince}
+${ifmatch}
+${ifnonmatch}
+${ifunmodifiedsince}
+${range}
+${cannonicalizedhttpheader}
+x-ms-date:${processingDate}
+x-ms-version:${apiver}
+/${accountName}${urlresourcepath}${blobquery ?: ''}"""
+
+println stringToSign
+def key = sharedAccountKey.decodeBase64()
+def mac = Mac.getInstance("HmacSHA256")
+mac.init(new SecretKeySpec(key, "HmacSHA256"))
+def signature = mac.doFinal(stringToSign.getBytes("UTF-8")).encodeBase64().toString()
+def authorization = "SharedKey ${accountName}:${signature}"
+return [authorization: authorization, processingDate: processingDate]
+}
+
+def generateAzureSignature(String httpverb, String accountName, String apiver, String sharedAccountKey, String urlresourcepath){
+    // generateAzureSignature(httpverb, accountName, apiver, "", "", "8913", "Wg1sY16+GHpDw/VjZs2KUw==", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "", "", "", "", "", "", sharedAccountKey, "", urlresourcepath, "")
+    generateAzureSignature(httpverb, accountName, apiver, "", "", "", "", "", "", "", "", "", "", "", sharedAccountKey, "", urlresourcepath, "")
+}
+def getArchivePath(String originalPath) {
+    def directories = originalPath.split('/')
+     def regionSpecificFilename =""
+    if (directories.length >= 2) {
+        def parentDir = directories[0]
+        def filename = directories[-1]
+        if (filename.contains("LATAM"))
+            regionSpecificFilename = "PPRMDCS_LATAM.tab"
+        else
+        regionSpecificFilename = "PPRMDCS_NA.tab"
+        return ["${parentDir}/Archive/${filename}".toString(), filename, regionSpecificFilename]
+    }
+    return [originalPath, originalPath, originalPath]
+}
+
+def Message processData(Message message) {
+    // Get properties from message or use default values
+    def body = message.getBody(String)
+    def props = message.getProperties()
+    def sharedAccountKey = props.get("sharedAccountKey") ?: "<SHAREDACCOUNTKEY>"
+    def httpverb = props.get("httpverb") ?: "GET"
+    def accountName = props.get("accountName") ?: "bnlwestgunileveraf01130"
+    def apiver = props.get("apiver") ?: "2015-04-05"
+    
+    // Get urlresourcepath from the filename property
+    def filename = props.get("filename")
+    if (!filename) {
+        throw new IllegalArgumentException("filename property is not set")
+    }
+    def urlresourcepath = "/cordillera-writeback-outputs-6709-3-1-6709-3-2/${filename}"
+    
+    // Call the function with the retrieved properties
+    def result = generateAzureSignature(httpverb, accountName, apiver,sharedAccountKey, urlresourcepath)
+    message.setHeader("Authorization", result.authorization)
+    message.setHeader("x-ms-date", result.processingDate)
+    message.setHeader("x-ms-version", apiver)
+    def res = getArchivePath(filename)
+    message.setProperty("archivepath",res[0] )
+    message.setHeader("originalFileName", res[1])
+    message.setProperty("regionSpecificFilename", res[2])
+    //def temp = filename.replace(".xlsx", "_Test_1.xlsx")
+    //message.setProperty("temp", temp)
+    // if (filename != null && filename.contains("Archive")) {
+    // message.setProperty("fileaccess", false)
+    // } else {
+    // message.setProperty("fileaccess", true)
+    // }
+    def messageLog = messageLogFactory.getMessageLog(message)
+    
+    if (messageLog != null) {
+        messageLog.addAttachmentAsString("GET_Signature: ","${result.authorization}___x-ms-date: ${result.processingDate}_____url: ${urlresourcepath} ______x-ms-version: ${apiver}", "text/plain")
+        // messageLog.addAttachmentAsString("x-ms-date",result.processingDate, "text/plain")
+        // messageLog.addAttachmentAsString("x-ms-version",apiver, "text/plain")
+    }
+    return message
+}
