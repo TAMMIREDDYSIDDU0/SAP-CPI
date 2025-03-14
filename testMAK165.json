@@ -1,0 +1,1383 @@
+{
+    "timestamp": 1735892630,
+    "metrics": [
+        {
+            "name": "Z2MAK165LOIPRO02/EDI_DC40",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 19,
+                "columns": [
+                    "TABNAM",
+                    "MANDT",
+                    "DOCNUM",
+                    "DOCREL",
+                    "STATUS",
+                    "DIRECT",
+                    "OUTMOD",
+                    "IDOCTYP",
+                    "MESTYP",
+                    "SNDPOR",
+                    "SNDPRT",
+                    "SNDPRN",
+                    "RCVPOR",
+                    "RCVPRT",
+                    "RCVPRN",
+                    "CREDAT",
+                    "CRETIM",
+                    "ARCKEY",
+                    "SERIAL"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "EDI_DC40"
+                            },
+                            {
+                                "string_value": "010"
+                            },
+                            {
+                                "string_value": "0000001476770816"
+                            },
+                            {
+                                "string_value": "740"
+                            },
+                            {
+                                "string_value": "30"
+                            },
+                            {
+                                "string_value": "1"
+                            },
+                            {
+                                "string_value": "2"
+                            },
+                            {
+                                "string_value": "Z2MAK165LOIPRO02"
+                            },
+                            {
+                                "string_value": "Z2MAK165PRODORD"
+                            },
+                            {
+                                "string_value": "SAPP2Q"
+                            },
+                            {
+                                "string_value": "LS"
+                            },
+                            {
+                                "string_value": "P2QCLNT010"
+                            },
+                            {
+                                "string_value": "IS_A2A_AMS"
+                            },
+                            {
+                                "string_value": "LS"
+                            },
+                            {
+                                "string_value": "UNS6749"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "143617"
+                            },
+                            {
+                                "string_value": "urn:sap.com:msgid=000D3ABA0B531EEF97F84AE5AB22DF44"
+                            },
+                            {
+                                "string_value": "20240821143616"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 36,
+                "columns": [
+                    "AUFNR",
+                    "APROZ",
+                    "AUART",
+                    "SEQNR",
+                    "DISPO",
+                    "FHORI",
+                    "GAMNG",
+                    "GASMG",
+                    "GLTRP",
+                    "GSTRP",
+                    "GSTRS",
+                    "GSUZP",
+                    "GSUZS",
+                    "MATNR",
+                    "PLNAL",
+                    "SBMEH",
+                    "SBMNG",
+                    "STLAL",
+                    "WERKS",
+                    "WEMNG",
+                    "MIMEZ",
+                    "LGORT",
+                    "RSNUM",
+                    "Z1E1MATNR",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1JSTKL",
+                    "Z1E1AFFLL",
+                    "Z1E1AFPOL"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "9211872"
+                            },
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "Z101"
+                            },
+                            {
+                                "string_value": "00000000000000"
+                            },
+                            {
+                                "string_value": "001"
+                            },
+                            {
+                                "string_value": "000"
+                            },
+                            {
+                                "string_value": "25.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "065959"
+                            },
+                            {
+                                "string_value": "065959"
+                            },
+                            {
+                                "string_value": "62681562"
+                            },
+                            {
+                                "string_value": "1"
+                            },
+                            {
+                                "string_value": "CS"
+                            },
+                            {
+                                "string_value": "1000.000"
+                            },
+                            {
+                                "string_value": "1"
+                            },
+                            {
+                                "string_value": "6749"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "1000"
+                            },
+                            {
+                                "string_value": "0796409135"
+                            },
+                            {
+                                "string_value": "DV BW Coco + Cocoa 3p 30.6z/905ml W/Pump200000000000000100111110108541095FERT2177.000181.0001000.000CS000000CSEDV BW Coco + Cocoa 3p 30.6z/905ml W/Pump"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "RELMSPTPRCSETCCSERSSAPERTRNEWQBCRQMANC"
+                            },
+                            {
+                                "string_value": "00000001200011000.0100114340.0000.0000000000000000E+003000.000000000000000002024082106595920240821065959My Line 525.0000.00ZMYG140.0000.0000.0000.0000000000000000000ZCST0.000.00AR1.000202408210.000CHEPEA202408216749H261001000891682CHEPL0.000.00AR75.000202408210.0001001PSA562689941EA202408216749H261002000891682CU DV BW Coco + Cocoa 30.6z/905ml W/PumpL0.000.00AR25.000202408210.0001001PSA564780927ST202408216749H261003000891682CS DV BW 3p 30.6oz GNRC WraparoundL020000.0100114290.0008.3333333333333332E-03H3000.000000000000000002024082107000020240821070030My Line 525.0000.00MYG140.0000.0000.0000.0000000000000000000ZP07"
+                            },
+                            {
+                                "string_value": "0001CS0.00010000000000100062681562CS0.00025.0001110.000"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1MATNR",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 14,
+                "columns": [
+                    "MATXT",
+                    "PALQTY",
+                    "BOXPLAY",
+                    "LAYERS",
+                    "TUEAN",
+                    "MHDHB",
+                    "MTART",
+                    "BSTMI",
+                    "BSTRF",
+                    "BMENG",
+                    "BMEIN",
+                    "TUQTY",
+                    "ALTUM",
+                    "Z1E1DESCR"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "DV BW Coco + Cocoa 3p 30.6z/905ml W/Pump"
+                            },
+                            {
+                                "string_value": "200"
+                            },
+                            {
+                                "string_value": "000000"
+                            },
+                            {
+                                "string_value": "000000"
+                            },
+                            {
+                                "string_value": "10011111010854"
+                            },
+                            {
+                                "string_value": "1095"
+                            },
+                            {
+                                "string_value": "FERT"
+                            },
+                            {
+                                "string_value": "2177.000"
+                            },
+                            {
+                                "string_value": "181.000"
+                            },
+                            {
+                                "string_value": "1000.000"
+                            },
+                            {
+                                "string_value": "CS"
+                            },
+                            {
+                                "string_value": "000000"
+                            },
+                            {
+                                "string_value": "CS"
+                            },
+                            {
+                                "string_value": "EDV BW Coco + Cocoa 3p 30.6z/905ml W/Pump"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1MATNR/Z1E1DESCR",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 2,
+                "columns": [
+                    "SPRAS",
+                    "MAKTX"
+                ],
+                "types": [
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "E"
+                            },
+                            {
+                                "string_value": "DV BW Coco + Cocoa 3p 30.6z/905ml W/Pump"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "REL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "MSPT"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "PRC"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "SETC"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "CSER"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "SSAP"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "ERTR"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "NEWQ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "BCRQ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1JSTKL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 1,
+                "columns": [
+                    "STAT"
+                ],
+                "types": [
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "MANC"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1AFFLL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 6,
+                "columns": [
+                    "APLZL",
+                    "AUSCHL",
+                    "FLGAT",
+                    "PLNFL",
+                    "Z1E1AFVOL",
+                    "Z1E1AFVOL"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "00000001"
+                            },
+                            {
+                                "string_value": "2"
+                            },
+                            {
+                                "string_value": "0"
+                            },
+                            {
+                                "string_value": "0"
+                            },
+                            {
+                                "string_value": "011000.0100114340.0000.0000000000000000E+003000.000000000000000002024082106595920240821065959My Line 525.0000.00ZMYG140.0000.0000.0000.0000000000000000000ZCST0.000.00AR1.000202408210.000CHEPEA202408216749H261001000891682CHEPL0.000.00AR75.000202408210.0001001PSA562689941EA202408216749H261002000891682CU DV BW Coco + Cocoa 30.6z/905ml W/PumpL0.000.00AR25.000202408210.0001001PSA564780927ST202408216749H261003000891682CS DV BW 3p 30.6oz GNRC WraparoundL020000.0100114290.0008.3333333333333332E-03H3000.000000000000000002024082107000020240821070030My Line 525.0000.00MYG140.0000.0000.0000.0000000000000000000ZP07"
+                            },
+                            {
+                                "string_value": "011000.0100114340.0000.0000000000000000E+003000.000000000000000002024082106595920240821065959My Line 525.0000.00ZMYG140.0000.0000.0000.0000000000000000000ZCST0.000.00AR1.000202408210.000CHEPEA202408216749H261001000891682CHEPL0.000.00AR75.000202408210.0001001PSA562689941EA202408216749H261002000891682CU DV BW Coco + Cocoa 30.6z/905ml W/PumpL0.000.00AR25.000202408210.0001001PSA564780927ST202408216749H261003000891682CS DV BW 3p 30.6oz GNRC WraparoundL020000.0100114290.0008.3333333333333332E-03H3000.000000000000000002024082107000020240821070030My Line 525.0000.00MYG140.0000.0000.0000.0000000000000000000ZP07"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1AFFLL/Z1E1AFVOL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 26,
+                "columns": [
+                    "VORNR",
+                    "ANZZL",
+                    "ARBEI",
+                    "ARBID",
+                    "AUFAK",
+                    "BEARZ",
+                    "BMSCH",
+                    "CY_SEQNRV",
+                    "FSAVD",
+                    "FSAVZ",
+                    "FSEDD",
+                    "FSEDZ",
+                    "LTXA1",
+                    "MGVRG",
+                    "ANZMA",
+                    "ARBPL",
+                    "USR04",
+                    "USR05",
+                    "USR06",
+                    "USR07",
+                    "USR08",
+                    "USR09",
+                    "STEUS",
+                    "Z1E1RESBL",
+                    "Z1E1RESBL",
+                    "Z1E1RESBL"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "0110"
+                            },
+                            {
+                                "string_value": "0"
+                            },
+                            {
+                                "string_value": "0.0"
+                            },
+                            {
+                                "string_value": "10011434"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.0000000000000000E+00"
+                            },
+                            {
+                                "string_value": "3000.000"
+                            },
+                            {
+                                "string_value": "00000000000000"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "065959"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "065959"
+                            },
+                            {
+                                "string_value": "My Line 5"
+                            },
+                            {
+                                "string_value": "25.000"
+                            },
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "ZMYG14"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "00000000"
+                            },
+                            {
+                                "string_value": "00000000"
+                            },
+                            {
+                                "string_value": "ZCST"
+                            },
+                            {
+                                "string_value": "0.000.00AR1.000202408210.000CHEPEA202408216749H261001000891682CHEPL0.000.00AR75.000202408210.0001001PSA562689941EA202408216749H261002000891682CU DV BW Coco + Cocoa 30.6z/905ml W/PumpL0.000.00AR25.000202408210.0001001PSA564780927ST202408216749H261003000891682CS DV BW 3p 30.6oz GNRC WraparoundL"
+                            },
+                            {
+                                "string_value": "0.000.00AR1.000202408210.000CHEPEA202408216749H261001000891682CHEPL0.000.00AR75.000202408210.0001001PSA562689941EA202408216749H261002000891682CU DV BW Coco + Cocoa 30.6z/905ml W/PumpL0.000.00AR25.000202408210.0001001PSA564780927ST202408216749H261003000891682CS DV BW 3p 30.6oz GNRC WraparoundL"
+                            },
+                            {
+                                "string_value": "0.000.00AR1.000202408210.000CHEPEA202408216749H261001000891682CHEPL0.000.00AR75.000202408210.0001001PSA562689941EA202408216749H261002000891682CU DV BW Coco + Cocoa 30.6z/905ml W/PumpL0.000.00AR25.000202408210.0001001PSA564780927ST202408216749H261003000891682CS DV BW 3p 30.6oz GNRC WraparoundL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1AFFLL/Z1E1AFVOL/Z1E1RESBL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 16,
+                "columns": [
+                    "AUSCH",
+                    "AVOAU",
+                    "BDART",
+                    "BDMNG",
+                    "BDTER",
+                    "ENMNG",
+                    "MATNR",
+                    "MEINS",
+                    "SBTER",
+                    "WERKS",
+                    "SHKZG",
+                    "BWART",
+                    "POSNR",
+                    "STLNR",
+                    "MATXT",
+                    "POSTP"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "AR"
+                            },
+                            {
+                                "string_value": "1.000"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "CHEP"
+                            },
+                            {
+                                "string_value": "EA"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "6749"
+                            },
+                            {
+                                "string_value": "H"
+                            },
+                            {
+                                "string_value": "261"
+                            },
+                            {
+                                "string_value": "0010"
+                            },
+                            {
+                                "string_value": "00891682"
+                            },
+                            {
+                                "string_value": "CHEP"
+                            },
+                            {
+                                "string_value": "L"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1AFFLL/Z1E1AFVOL/Z1E1RESBL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 18,
+                "columns": [
+                    "AUSCH",
+                    "AVOAU",
+                    "BDART",
+                    "BDMNG",
+                    "BDTER",
+                    "ENMNG",
+                    "LGORT",
+                    "PRVBE",
+                    "MATNR",
+                    "MEINS",
+                    "SBTER",
+                    "WERKS",
+                    "SHKZG",
+                    "BWART",
+                    "POSNR",
+                    "STLNR",
+                    "MATXT",
+                    "POSTP"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "AR"
+                            },
+                            {
+                                "string_value": "75.000"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "1001"
+                            },
+                            {
+                                "string_value": "PSA5"
+                            },
+                            {
+                                "string_value": "62689941"
+                            },
+                            {
+                                "string_value": "EA"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "6749"
+                            },
+                            {
+                                "string_value": "H"
+                            },
+                            {
+                                "string_value": "261"
+                            },
+                            {
+                                "string_value": "0020"
+                            },
+                            {
+                                "string_value": "00891682"
+                            },
+                            {
+                                "string_value": "CU DV BW Coco + Cocoa 30.6z/905ml W/Pump"
+                            },
+                            {
+                                "string_value": "L"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1AFFLL/Z1E1AFVOL/Z1E1RESBL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 18,
+                "columns": [
+                    "AUSCH",
+                    "AVOAU",
+                    "BDART",
+                    "BDMNG",
+                    "BDTER",
+                    "ENMNG",
+                    "LGORT",
+                    "PRVBE",
+                    "MATNR",
+                    "MEINS",
+                    "SBTER",
+                    "WERKS",
+                    "SHKZG",
+                    "BWART",
+                    "POSNR",
+                    "STLNR",
+                    "MATXT",
+                    "POSTP"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "AR"
+                            },
+                            {
+                                "string_value": "25.000"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "1001"
+                            },
+                            {
+                                "string_value": "PSA5"
+                            },
+                            {
+                                "string_value": "64780927"
+                            },
+                            {
+                                "string_value": "ST"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "6749"
+                            },
+                            {
+                                "string_value": "H"
+                            },
+                            {
+                                "string_value": "261"
+                            },
+                            {
+                                "string_value": "0030"
+                            },
+                            {
+                                "string_value": "00891682"
+                            },
+                            {
+                                "string_value": "CS DV BW 3p 30.6oz GNRC Wraparound"
+                            },
+                            {
+                                "string_value": "L"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1AFFLL/Z1E1AFVOL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 24,
+                "columns": [
+                    "VORNR",
+                    "ANZZL",
+                    "ARBEI",
+                    "ARBID",
+                    "AUFAK",
+                    "BEARZ",
+                    "BEAZE",
+                    "BMSCH",
+                    "CY_SEQNRV",
+                    "FSAVD",
+                    "FSAVZ",
+                    "FSEDD",
+                    "FSEDZ",
+                    "LTXA1",
+                    "MGVRG",
+                    "ANZMA",
+                    "ARBPL",
+                    "USR04",
+                    "USR05",
+                    "USR06",
+                    "USR07",
+                    "USR08",
+                    "USR09",
+                    "STEUS"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "0200"
+                            },
+                            {
+                                "string_value": "0"
+                            },
+                            {
+                                "string_value": "0.0"
+                            },
+                            {
+                                "string_value": "10011429"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "8.3333333333333332E-03"
+                            },
+                            {
+                                "string_value": "H"
+                            },
+                            {
+                                "string_value": "3000.000"
+                            },
+                            {
+                                "string_value": "00000000000000"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "070000"
+                            },
+                            {
+                                "string_value": "20240821"
+                            },
+                            {
+                                "string_value": "070030"
+                            },
+                            {
+                                "string_value": "My Line 5"
+                            },
+                            {
+                                "string_value": "25.000"
+                            },
+                            {
+                                "string_value": "0.00"
+                            },
+                            {
+                                "string_value": "MYG14"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "00000000"
+                            },
+                            {
+                                "string_value": "00000000"
+                            },
+                            {
+                                "string_value": "ZP07"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Z2MAK165LOIPRO02/Z1E1AFKOL/Z1E1AFPOL",
+            "datatype": 16,
+            "dataset_value": {
+                "num_of_columns": 15,
+                "columns": [
+                    "POSNR",
+                    "AMEIN",
+                    "BMENG",
+                    "DFREI",
+                    "KDEIN",
+                    "KDPOS",
+                    "LGORT",
+                    "MATNR",
+                    "MEINS",
+                    "PSAMG",
+                    "PSMNG",
+                    "UMREN",
+                    "UMREZ",
+                    "WEBAZ",
+                    "WEMNG"
+                ],
+                "types": [
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "rows": [
+                    {
+                        "elements": [
+                            {
+                                "string_value": "0001"
+                            },
+                            {
+                                "string_value": "CS"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "1"
+                            },
+                            {
+                                "string_value": "0000"
+                            },
+                            {
+                                "string_value": "000000"
+                            },
+                            {
+                                "string_value": "1000"
+                            },
+                            {
+                                "string_value": "62681562"
+                            },
+                            {
+                                "string_value": "CS"
+                            },
+                            {
+                                "string_value": "0.000"
+                            },
+                            {
+                                "string_value": "25.000"
+                            },
+                            {
+                                "string_value": "1"
+                            },
+                            {
+                                "string_value": "1"
+                            },
+                            {
+                                "string_value": "1"
+                            },
+                            {
+                                "string_value": "0.000"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "seq": 2
+}
