@@ -1,0 +1,13 @@
+import com.sap.gateway.ip.core.customdev.util.Message;
+def Message processData(Message message) {
+    // Extract specific properties from the message
+    def body = message.getBody(java.lang.String) as String;
+    def Business_Value = message.getHeader("FullFileName", String)
+    // Adding custom properties to the message log
+    def messageLog = messageLogFactory.getMessageLog(message);
+    messageLog.setStringProperty("Logging#1", "Printing Payload As Attachment")
+    messageLog.addAttachmentAsString("Incoming Payload: ", body, "text/plain");
+    messageLog.addCustomHeaderProperty("File_Name", Business_Value) : null
+    }
+    return message
+}
