@@ -1,0 +1,30 @@
+import com.sap.gateway.ip.core.customdev.util.Message;
+import java.text.SimpleDateFormat;
+import java.util.TimeZone;
+
+def Message processData(Message message) {
+    def filename = message.getHeaders().get("FullFileName")
+    def timestamp = filename.substring(23, 37)
+    message.setProperty("timestamp", timestamp)
+    def dateFormat = new SimpleDateFormat("yyyyMMddHHmmss")
+    // dateFormat.setTimeZone(TimeZone.getTimeZone("CET"))
+    
+    def timestampDate = dateFormat.parse(timestamp)
+
+    def hour = timestampDate.hours
+    def minute = timestampDate.minutes
+
+    def isValid = false
+
+    if ((hour == 0 && minute >= 0 && minute <= 15) || (hour == 12 && minute >= 0 && minute <= 15)) {
+        isValid = true
+    }
+
+    if (isValid) {
+        message.setProperty("validFile", "true")
+    } else {
+        message.setProperty("validFile", "false")
+    }
+
+    return message;
+}
