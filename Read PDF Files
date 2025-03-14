@@ -1,0 +1,76 @@
+// source : https://community.sap.com/t5/technology-blogs-by-members/groovy-to-extract-text-from-pdf-in-cpi/ba-p/13559953
+// Download the pdfbox JAR file from the following  : https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox-app/1.8.17/pdfbox-app-1.8.17.jar
+// Download the fontbox JAR file from the following : https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/1.8.17/fontbox-1.8.17.jar
+
+Add to integration suite > references > archives 
+import com.sap.gateway.ip.core.customdev.util.Message;
+import java.util.HashMap;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.util.PDFTextStripper
+import java.io.InputStream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public static String readFromPDF(InputStream input) {
+    PDDocument pd;
+    try {
+        pd = PDDocument.load(input);
+        PDFTextStripper stripper = new PDFTextStripper();
+        stripper.setStartPage(1); // Start Page
+        // stripper.setEndPage(1); // End Page
+        String text = stripper.getText(pd);
+        if (pd != null) {
+            pd.close();
+        }
+        return text;
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return null;
+}
+
+public static Map<String, String> extractValues(String text) {
+    Map<String, String> values = new HashMap<>();
+    Pattern billPattern = Pattern.compile("Bill #\\s*:\\s*(\\d+)");
+    Pattern shipmentPattern = Pattern.compile("Master Shipment #\\s*:\\s*(\\d+)");
+    
+    Matcher billMatcher = billPattern.matcher(text);
+    Matcher shipmentMatcher = shipmentPattern.matcher(text);
+    
+    if (billMatcher.find()) {
+        values.put("BillNumber", billMatcher.group(1));
+    }
+    if (shipmentMatcher.find()) {
+        values.put("MasterShipmentNumber", shipmentMatcher.group(1));
+    }
+    
+    return values;
+}
+
+def Message processData(Message message) {
+    // Read PDF and extract text
+    def body = message.getBody();
+    InputStream IS = body;
+    String res = readFromPDF(IS);
+    
+    // Extract values from PDF text
+    Map<String, String> extractedValues = extractValues(res);
+    message.setProperty("BillNumber", extractedValues.get("BillNumber"));
+    message.setProperty("MasterShipmentNumber", extractedValues.get("MasterShipmentNumber"));
+    
+    // Set message body
+    message.setBody(res);
+    
+    // Process properties and headers
+    def properties = message.getProperties();
+    def headers = message.getHeaders();
+    // String completePath = properties.get("Lock Name");
+
+    // // Split fullname
+    // String[] vCompletePath = completePath.split('/');
+    // // Set properties
+    // message.setProperty("filename", vCompletePath[vCompletePath.length-1]);
+    // message.setHeader("SAP_ApplicationID", vCompletePath[vCompletePath.length-1]);
+
+    return message;
+}
