@@ -1,0 +1,19 @@
+import com.sap.gateway.ip.core.customdev.util.Message
+
+def Message processData(Message message) {
+    def body = message.getBody(String)
+    def xmlDeclarationPattern = /(<\?xml[^>]*\?>)/
+    def namespaceTag = '<ns0:Z2MAK165LOIPRO02 releaseID="" xmlns:ns0="http://www.w3.org/2001/XMLSchema" version="1.0">'
+    body = body.replaceFirst(xmlDeclarationPattern, '$1\n' + namespaceTag)
+    def pattern = /(<\/?)([\w:\-]+)(\s*[^>]*?>)/
+    
+    def modifiedBody = body.replaceAll(pattern) { fullMatch, startBracket, tagName, remainder ->
+        if (startBracket == "</") {
+            "</ns0:" + tagName + remainder
+        } else {
+            "<ns0:" + tagName + remainder
+        }
+    }
+    message.setBody(modifiedBody)
+    return message
+}
